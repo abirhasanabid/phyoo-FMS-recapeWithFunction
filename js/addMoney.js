@@ -21,11 +21,13 @@ document.getElementById('addMoney-btn').addEventListener('click', function (e) {
 
 // first cash out btn
 
-document.getElementById('first-addMoney-btn').addEventListener('click',function(){
+document.getElementById('first-addMoney-btn').addEventListener('click', function () {
     const hiddenAddMoney = getTagsById('hidden-addMoney-btn');
-    const removeClass = hiddenAddMoney.classList.remove('hidden');
+    const removeClass1 = hiddenAddMoney.classList.remove('hidden');
     const hiddenCashOutMoney = getTagsById('hidden-cash-out-btn');
-    const addClass = hiddenCashOutMoney.classList.add('hidden')
+    const addClass1 = hiddenCashOutMoney.classList.add('hidden');
+    const tranjectionText = getTagsById('tranjection-text');
+    const addClass2 = tranjectionText.classList.add('hidden');
 })
 
 // cash out btn
@@ -55,6 +57,15 @@ document.getElementById('first-cashOut-btn').addEventListener('click', function 
     const hiddenBtn = getTagsById('hidden-cash-out-btn');
     const removeClass = hiddenBtn.classList.remove('hidden');
     const firstAddMoneyBtn = getTagsById('hidden-addMoney-btn');
-    const addClass = firstAddMoneyBtn.classList.add('hidden');
+    const addClass1 = firstAddMoneyBtn.classList.add('hidden');
+    const tranjectionText = getTagsById('tranjection-text');
+    const addClass2 = tranjectionText.classList.add('hidden');
+})
+
+// tranjection
+
+document.getElementById('tranjection-btn').addEventListener('click', function () {
+    const tranjectionText = getTagsById('tranjection-text');
+    const removeClass = tranjectionText.classList.remove('hidden');
 
 })

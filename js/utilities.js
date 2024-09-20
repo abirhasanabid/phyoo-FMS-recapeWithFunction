@@ -1,6 +1,5 @@
 // innerHtml
 function getAllInputFieldValueById (id){
-// const amountInput= document.getElementById('amount-input').value
 
 const findIdValue = parseFloat(document.getElementById(id).value);
 
